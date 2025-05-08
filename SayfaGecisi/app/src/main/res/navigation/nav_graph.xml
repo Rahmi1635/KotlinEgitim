@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anaSayfaFragment">
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.example.sayfagecisi.anaSayfaFragment"
+        android:label="AnaSayfaFragment" >
+        <action
+            android:id="@+id/homeTo_A"
+            app:destination="@id/AFragment" />
+        <action
+            android:id="@+id/homeTo_X"
+            app:destination="@id/XFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AFragment"
+        android:name="com.example.sayfagecisi.AFragment"
+        android:label="AFragment" >
+        <action
+            android:id="@+id/Ato_B"
+            app:destination="@id/BFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/XFragment"
+        android:name="com.example.sayfagecisi.XFragment"
+        android:label="XFragment" >
+        <action
+            android:id="@+id/Xto_Y"
+            app:destination="@id/YFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="com.example.sayfagecisi.BFragment"
+        android:label="BFragment" >
+        <action
+            android:id="@+id/Bto_Y"
+            app:destination="@id/YFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/YFragment"
+        android:name="com.example.sayfagecisi.YFragment"
+        android:label="YFragment" />
+</navigation>
